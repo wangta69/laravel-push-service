@@ -3,7 +3,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
 
-class CreatePushsTables extends Migration
+class CreateCloudMessagesTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePushsTables extends Migration
     public function up()
     {
         // 게시판 설정값 담을 테이블
-        Schema::create('pushs', function(BluePrint $table) {
+        Schema::create('cloud_messages', function(BluePrint $table) {
             $table->engine = 'InnoDB';
 
             $table->increments('id');
